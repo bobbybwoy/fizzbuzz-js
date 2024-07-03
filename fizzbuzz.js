@@ -19,14 +19,13 @@ function fizzbuzz() {
             else result = "Bong";
         if (i % 17 == 0) {
             if (result.length === 12) {
-
+                result = `${result.substring(result.length, result.length-4)}${result.substring(4, 8)}${result.substring(0, 4)}`;
             } else {
-                
+                result = `${result.substring(result.length, result.length-4)}${result.substring(0, 4)}`;
             }
-            console.log(`17: ${i} ${result}`);
         }
 
-        // result == "" ? console.log(i) : console.log(result);
+        result == "" ? console.log(i) : console.log(result);
     }
 
 }
